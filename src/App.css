@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+/* ------------------------------------- */
+.container {
+  padding-top:50px;
+}
+
+.row {
+  height: 90vh;
+}
+
+.app_sidebar {
+  background-color: aqua;
+
+}
+
+
+.app_main {
+  background-color: blueviolet;
+}
