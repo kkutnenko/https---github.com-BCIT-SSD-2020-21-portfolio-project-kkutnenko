@@ -37,7 +37,7 @@
   }
 }
 
-/* ------------------------------------- */
+/* Global page styles------------------------------------- */
 
 body{
   background-image: linear-gradient( to right bottom,  #757F9A,#D7DDE8);  
@@ -52,17 +52,58 @@ body{
   height: 90vh;
 }
 
-.app_sidebar {
-  background-color: white;
-  height: 100%;
-  border-radius: 15px;
-  padding: 15px 5px;
-}
 
-
-.app_main {
+.app-main {
   background-color: white;
   border-radius: 15px;
   padding: 15px 5px;
   box-shadow: 5px 5px 20px white(255, 0, 149);
 }
+
+/* Sidebar styles------------------------------------- */
+
+.sidebar {
+  background-color: white;
+  height: 100%;
+  border-radius: 15px;
+  padding: 15px 5px;
+  text-align: center;
+}
+
+.sidebar-avatar {
+
+  height: 110px;
+  width: 120px;
+  object-fit: contain;
+  border-radius: 30px;
+}
+.sidebar-icon{
+  width: 25px;
+  height:25px;
+  margin: 0px 5px
+}
+
+.sidebar-name {
+font-family: Kaushan Script;
+margin: 20px 0;
+
+}
+
+.sidebar-name>span{
+  color: #00F260;
+}
+.sidebar-item{
+  margin-bottom:6px;
+  padding-top: 6px;
+  height:40px;
+  font-size: 1.05rem;
+  border-radius: 15px;
+}
+
+#inline {
+  display: inline-block;
+}
+
+
+
+
