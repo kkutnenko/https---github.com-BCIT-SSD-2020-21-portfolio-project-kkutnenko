@@ -38,6 +38,12 @@
 }
 
 /* ------------------------------------- */
+
+body{
+  background-image: linear-gradient( to right bottom,  #757F9A,#D7DDE8);  
+  background-attachment: fixed;
+}
+
 .container {
   padding-top:50px;
 }
@@ -47,11 +53,16 @@
 }
 
 .app_sidebar {
-  background-color: aqua;
-
+  background-color: white;
+  height: 100%;
+  border-radius: 15px;
+  padding: 15px 5px;
 }
 
 
 .app_main {
-  background-color: blueviolet;
+  background-color: white;
+  border-radius: 15px;
+  padding: 15px 5px;
+  box-shadow: 5px 5px 20px white(255, 0, 149);
 }
