@@ -20,7 +20,7 @@ export default class Sidebar extends Component {
             <div className="sidebar">
                 <img src={mightycoder} alt="avatar" className="sidebar-avatar"/>
                 <div className="sidebar-name">
-                    <p>Kirill <span>Kutnenko</span> </p>
+                    <p><span>Kirill Kutnenko</span> </p>
                 </div>
 
                 <div className="sidebar-item sidebar-title">
@@ -32,19 +32,19 @@ export default class Sidebar extends Component {
                         <p id="inline">Download resume</p>
                     </div>
                 </a>
-                <figure className="sidebar-social-icons">
-                    <a href="" >
-                        <img src={linkedin} alt="facebook" className="sidebar-icon"/>
+                {/* <figure className="sidebar-social-icons">  */}
+                    <a href="#" >
+                        <img src={linkedin} alt="linkedin" className="sidebar-icon"/>
                     </a>
-                    <a href=""><p></p>
+                    <a href="#" >
                         <img src={facebook} alt="linkedin" className="sidebar-icon"/>
                     </a>
-                </figure>
+                 {/* </figure>  */}
                 <div className="contact">
                     <div className="sidebar-item">
                         <a href="" >
                             <img src={github} alt="github" className="sidebar-icon"/>
-                            <p id="inline">Github</p>
+                            <p id="inline"></p>
                         </a>
                     </div>
                     <div className="sidebar-location">

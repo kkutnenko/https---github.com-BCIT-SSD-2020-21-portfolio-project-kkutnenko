@@ -11,12 +11,12 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <div className="container">
-          <div className = "row">
+        <div className="container app-container">
+          <div className = "row app-row">
             <div className="col-lg-3">
                 <Sidebar/>  
             </div>
-            <div className = "col-lg-9 app-main">
+            <div className = "col-lg-9 app-main-content">
                 <Navbar/>
                     <Switch>
                         <Route path = "/about">
