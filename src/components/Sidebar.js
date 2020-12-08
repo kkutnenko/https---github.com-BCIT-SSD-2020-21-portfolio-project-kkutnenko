@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import facebook from '../assets/icons/facebook.svg'
 import linkedin from '../assets/icons/linkedin.svg'
 import github from '../assets/icons/github.svg'
-import tie from '../assets/icons/tie.svg'
-import pin from '../assets/icons/pin.svg'
+import tie from '../assets/icons/pin1.svg'
+import pin from '../assets/icons/map.png'
 import mightycoder from '../assets/icons/programmer.svg'
 import resume from '../assets/resume.pdf'
 
@@ -24,7 +24,7 @@ export default class Sidebar extends Component {
                 </div>
 
                 <div className="sidebar-item sidebar-title">
-                    <p>Full Stack Web Developer</p>
+                    <p>Web Developer</p>
                 </div>
                 <a href={resume} download="resume.pdf">
                     <div className="sidebar-item">
@@ -55,7 +55,7 @@ export default class Sidebar extends Component {
                         <p>kkutnenko@my.bcit.ca</p>
                     </div>
                     <div className="sidebar-item">
-                        <p>604-778-685-7199</p>
+                        <p>604-685-7199</p>
                     </div>
                 </div>
                 <div className="sidebar-item sidebar-email" onClick={handleEmailMe}>

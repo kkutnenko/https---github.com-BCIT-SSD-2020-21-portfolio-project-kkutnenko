@@ -8,17 +8,29 @@ export default class Navbar extends Component {
         super(props);
         
         this.state ={
-            activeLink:''
+            activeLink:'About'
         };
         
 
     }
 
-componentDidMount(){
-    this.setState({activeLink:'About'})
-}
+// componentDidMount(clickedLink){
+//     this.setState({activeLink:'About'})
+// }
 
+componentDidUpdate(prevProps) {
+    // Typical usage (don't forget to compare props):
+    if (this.props.activeLink !== prevProps.activeLink) {
+        let currentURL = window.location.href;
 
+        if (currentURL.endsWith('/resume')) {
+            this.setState({activeLink:'Resume'})}
+        else if (currentURL.endsWith('/projects')) {
+            this.setState({activeLink:'Projects'}) }
+        else if (currentURL.endsWith('/about')) {
+            this.setState({activeLink:'About'}) }
+    }
+  }
  
     // componentDidUpdate (_,prevProps){
     //     if(this.state === prevProps) {
@@ -30,14 +42,14 @@ componentDidMount(){
     //  }
 
     // checkURL () {
-    //     let currentURL = window.location.href;
+        // let currentURL = window.location.href;
 
-    //     if (currentURL.endsWith('/resume')) {
-    //         return 'Resume'}
-    //     else if (currentURL.endsWith('/projects')) {
-    //         return 'Projects' }
-    //     else if (currentURL.endsWith('/about')) {
-    //             return 'About' }
+        // if (currentURL.endsWith('/resume')) {
+        //     return 'Resume'}
+        // else if (currentURL.endsWith('/projects')) {
+        //     return 'Projects' }
+        // else if (currentURL.endsWith('/about')) {
+        //         return 'About' }
     // }
 
     handleClick (clickedLink)  {

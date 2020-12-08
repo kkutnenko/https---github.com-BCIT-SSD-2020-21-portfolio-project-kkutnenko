@@ -1,5 +1,5 @@
 
-/* #737196 pupr #6e7e91 #6B763E grn #D1CAC0 beige #FEFBF4 light beige Global page styles------------------------------------- */
+/* #737196 pupr #6e7e91 #6B763E grn #D1CAC0 beige #FEFBF4 light beige #b6bd40 #cbce91ff light green Global page styles------------------------------------- */
 
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
@@ -96,10 +96,13 @@ font-size: 30px;
 }
 
 .sidebar-title{
-  color:#737196;
+  color:black;
   background-color: #FEFBF4;
   border-radius: 30px;
   font-family: 'Satisfy', cursive;
+  font-size: 23px;
+  margin-left: 35px;
+  margin-right: 35px;
 }
 
 .sidebar-social-icons{
@@ -123,13 +126,13 @@ font-size: 30px;
 
   border-radius: 30px;
   color: #fff;
-  margin: 15px 25px 0px;
+  margin: 15px 10px 0px;
   cursor: pointer;
   transition: all 0.1s linear;
 }
 
 .sidebar-email:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
  
   
 }
@@ -150,6 +153,7 @@ font-size: 30px;
 
 .navbar-items{
   display: flex;
+  
   }
 
 .navbar-active{
@@ -161,6 +165,7 @@ font-size: 30px;
 }
 
 .navbar-item{
+  color: #00F260;
   margin-right: 20px;
   text-decoration: none;
   color: black;
@@ -225,33 +230,34 @@ font-size: 30px;
   color: #6e7e91;
 }
 
-/* resume */
+/* resume ---------------------------------------------------*/
 
 .resume {
   padding-top: 20px;
 }
 
-.resume-card__heading,
-.reume-language__heading {
-  margin-left: 10px;
+.resume-card-heading,
+.reume-language-heading {
+  /* margin-left: 10px; */
   font-size: 1.6rem;
   font-weight: 700;
   color: #354538;
 }
 
-.resume-card__body {
-  margin-top: 10px;
+.resume-card-body {
+  margin-top: 20px;
+  margin-left: 10px;
 }
 
-.resume-card__title {
+.resume-card-title {
   font-weight: 700;
 }
 
-.resume-card__name {
+.resume-card-name {
   font-size: 16px;
 }
 
-.resume-card__details {
+.resume-card-details {
   font-size: 0.9rem;
   padding-top: 5px;
 }
@@ -265,17 +271,19 @@ font-size: 30px;
 
 }
 
-.bar__icon {
+.bar-icon {
   width: 15px;
   height: 15px;
+  margin-right: 10px;
 }
 
-.bar__wrapper {
-  background-image: linear-gradient(90deg, #00F260, #0575E6);
+.bar-wrapper {
+  background-image: linear-gradient(90deg, #c7d3d4ff,#c7d3d4ff);
   border-radius: 20px;
   padding: 4px 14px;
-  color: #fff;
+  color: #000;
   font-size: 0.9rem
+  
 }
 
 /* projects */
@@ -285,14 +293,14 @@ font-size: 30px;
   overflow-y: auto;
 }
 
-.projectCard__wrapper {
+.projectCard-wrapper {
   margin: 10px 0;
   width: 100%;
   height: 100%;
   min-height: 160px;
 }
 
-.projectCard__image {
+.projectCard-image {
   width: 100%;
   height: 80%;
   border-radius: 30px;
@@ -300,17 +308,17 @@ font-size: 30px;
   transition: transform 0.3s linear;
 }
 
-.projectCard__image:hover {
+.projectCard-image:hover {
   transform: scale(1.05);
 }
 
-.projectCard__icon {
+.projectCard-icon {
   width: 25px;
   height: 25px;
   margin-right: 5px;
 }
 
-.projectCard__title {
+.projectCard-title {
   margin-top: 12px;
   font: size 1rem;
   display: flex;
@@ -318,32 +326,32 @@ font-size: 30px;
   justify-content: center;
 }
 
-.projects__navbar {
+.projects-navbar {
   display: flex;
   margin-bottom: 5px;
 }
 
-.projects__navbar>div {
+.projects-navbar>div {
   margin: 0 5px;
   font-size: 1rem;
   cursor: pointer;
 }
 
-.projects__navbar-active {
+.projects-navbar-active {
   color: #00F260;
 }
 
 @media (max-width: 600px) {
-  .app__main-content {
+  .app-main-content {
       margin-right: 10px;
       margin-left: 10px;
   }
 
-  .navbar__active {
+  .navbar-active {
       font-size: 1.5rem;
   }
 
-  .navbar__item {
+  .navbar-item {
       font-size: 1rem;
   }
 
