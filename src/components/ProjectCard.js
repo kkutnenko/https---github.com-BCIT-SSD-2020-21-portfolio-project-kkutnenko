@@ -1,5 +1,6 @@
 import React from 'react';
 import gitIcon from '../assets/icons/github.svg'
+import gitItem from '../assets/icons/github.svg'
 
 const componentName = ({project:{name, image, github}}) => {
     return (

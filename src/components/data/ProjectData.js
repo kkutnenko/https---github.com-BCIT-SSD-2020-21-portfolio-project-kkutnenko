@@ -1,41 +1,47 @@
 import React, { Component } from 'react';
+import menuApp from '../assets/projects/menu.PNG'
+import electroSparks from '../assets/projects/electrosparks1.png'
+import designPrinciples from '../assets/projects/design.png'
+import electrosparks from '../assets/projects/electrosparks2.png'
+import movieApp from '../assets/projects/movie.png'
+import eshop from '../assets/projects/eshop.png'
 
 const projectData = [
     {
-        name: 'menuApp',
-        image: '',
+        name: 'MenuApp',
+        image: menuApp,
         github: 'https://github.com/BCIT-SSD-2020-21/lab-7-intermediate-javascript-group_l.git',
-        category: [JavaScript]
+        category: ['JavaScript']
     },
     {
         name: 'ElectroSparks',
-        image: '',
+        image: electroSparks,
         github: 'https://github.com/BCIT-SSD-2020-21/front-end-project-the-spartans',
-        category: [Html, Css, JavaScript]
+        category: ['Html, Css, JavaScript']
     },
     {
         name: 'DesignPrinciples',
-        image: '',
+        image: designPrinciples,
         github: 'https://github.com/BCIT-SSD-2020-21/lab-3-advanced-css-group-a',
-        category: [Html, Css]
+        category: ['Html, Css']
     },
     {
         name: 'Electrosparks',
-        image: '',
+        image: electrosparks,
         github: 'https://github.com/BCIT-SSD-2020-21/lab-1---angular-kkutnenko',
-        category: [Angular]
+        category: ['Angular']
     },
     {
         name: 'MovieApp',
-        image: '',
+        image: movieApp,
         github: 'https://github.com/BCIT-SSD-2020-21/lab-2---react-kkutnenko',
-        category: [ReactJS]
+        category: ['ReactJS']
     },
     {
         name: 'Eshop',
-        image: '',
+        image: eshop,
         github: 'https://github.com/BCIT-SSD-2020-21/ssdeshoponweb-kkutnenko',
-        category: [Asp.Net]
+        category: ['Asp.Net']
     },
 ]
 
