@@ -10,13 +10,13 @@ import Projects from "./components/Projects"
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div id= "App" className="App">
         <div className="container app-container">
           <div className = "row app-row">
             <div className="col-lg-3">
                 <Sidebar/>  
             </div>
-            <div className = "col-lg-9 app-main-content">
+            <div className = "col-lg-9 app-main-content d.flex">
                 <Navbar/>
                     <Switch>
                         <Route path = "/about">

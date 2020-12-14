@@ -47,7 +47,7 @@ export default class About extends Component {
             <div className="about">
                 <p className="about-intro"> I am a full-stack web/ mobile developer with background in financial accounting and banking. I describe myself as reliable, bondable and result oriented. I am a lifelong learner who loves problem solving.</p>
                 
-                <p className="about-intro">When not coding, you can find on a skating rink, in the mountains riding my snowboard, or playing with my children. I greatly enjoy travelling and taking photos while doing so.</p>
+                <p className="about-intro">When not coding, you can find me on a skating rink, in the mountains riding my snowboard, or playing with my children. I greatly enjoy travelling and taking photos while doing so.</p>
             
                 <div className="container about-container">
                     <h6 className="about-heading">What I offer</h6>

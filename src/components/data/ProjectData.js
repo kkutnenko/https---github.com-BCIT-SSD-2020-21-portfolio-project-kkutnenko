@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import menuApp from '../assets/projects/menu.PNG'
-import electroSparks from '../assets/projects/electrosparks1.png'
-import designPrinciples from '../assets/projects/design.png'
-import electrosparks from '../assets/projects/electrosparks2.png'
-import movieApp from '../assets/projects/movie.png'
-import eshop from '../assets/projects/eshop.png'
+import menuApp from '../../assets/projects/menu.PNG'
+import electroSparks from '../../assets/projects/electrosparks1.png'
+import designPrinciples from '../../assets/projects/design.png'
+import electrosparks from '../../assets/projects/electrosparks2.png'
+import movieApp from '../../assets/projects/movie.png'
+import eshop from '../../assets/projects/eshop.png'
 
 const projectData = [
     {
@@ -14,19 +14,19 @@ const projectData = [
         category: ['JavaScript']
     },
     {
-        name: 'ElectroSparks',
+        name: 'Electrosparks',
         image: electroSparks,
         github: 'https://github.com/BCIT-SSD-2020-21/front-end-project-the-spartans',
-        category: ['Html, Css, JavaScript']
+        category: ['HTML', 'JavaScript']
     },
     {
         name: 'DesignPrinciples',
         image: designPrinciples,
         github: 'https://github.com/BCIT-SSD-2020-21/lab-3-advanced-css-group-a',
-        category: ['Html, Css']
+        category: ['HTML']
     },
     {
-        name: 'Electrosparks',
+        name: 'Electrosparks with Angular',
         image: electrosparks,
         github: 'https://github.com/BCIT-SSD-2020-21/lab-1---angular-kkutnenko',
         category: ['Angular']
