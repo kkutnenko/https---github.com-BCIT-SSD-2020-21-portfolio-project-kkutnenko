@@ -52,16 +52,16 @@ export default class Sidebar extends Component {
                     </div>
                 </a>
                 {/* <figure className="sidebar-social-icons">  */}
-                    <a href="#" >
+                    <a href="https://www.linkedin.com/in/kirill-kutnenko-55a2122/" >
                         <img src={linkedin} alt="linkedin" className="sidebar-icon"/>
                     </a>
-                    <a href="#" >
+                    <a href="https://www.facebook.com/kirill.kutnenko.1/" >
                         <img src={facebook} alt="linkedin" className="sidebar-icon"/>
                     </a>
                  {/* </figure>  */}
                 <div className="contact">
                     <div className="sidebar-item">
-                        <a href="" >
+                        <a href="https://github.com/kkutnenko?tab=repositories" >
                             <img src={github} alt="github" className="sidebar-icon"/>
                             <p id="inline"></p>
                         </a>

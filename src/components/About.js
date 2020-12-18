@@ -6,6 +6,7 @@ import backend from '../assets/icons/backend.svg'
 import database from '../assets/icons/databases.svg'
 import mobile from '../assets/icons/mobile.svg'
 import serverless from '../assets/icons/cloud.svg'
+import {motion} from 'framer-motion'
 
 const skills = [
     {
@@ -43,9 +44,28 @@ const skills = [
 
 export default class About extends Component {
     render() {
+        const aboutVar = 
+            {
+                hidden: 
+                {
+                   opacity:0
+                },
+                visible: 
+                {
+                    opacity: 1,
+                    transition: 
+                    {
+                        delay:0.2, duration:0.6, type: 'spring'
+                    }
+                }
+            }
         return (
-            <div className="about">
-                <p className="about-intro"> I am a full-stack web/ mobile developer with background in financial accounting and banking. I describe myself as reliable, bondable and result oriented. I am a lifelong learner who loves problem solving.</p>
+            <motion.div className="container about"
+            variants={aboutVar}
+                initial='hidden'
+                animate='visible'
+            >
+                <p className="about-intro"> I am a full-stack web/mobile developer with background in financial accounting and banking. I describe myself as reliable, bondable and result oriented. I am a lifelong learner who loves problem solving.</p>
                 
                 <p className="about-intro">When not coding, you can find me on a skating rink, in the mountains riding my snowboard, or playing with my children. I greatly enjoy travelling and taking photos while doing so.</p>
             
@@ -59,7 +79,7 @@ export default class About extends Component {
                             }
                         </div>
                 </div>
-            </div>
+            </motion.div>
         )
     }
 }

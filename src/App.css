@@ -12,7 +12,7 @@ body{
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 0.5px;
 }
 
 /* ::-webkit-scrollbar-thumb {
@@ -44,9 +44,9 @@ a:hover {
   border: 1px solid rgba(209, 202, 192, 0.35); 
   background: rgba(209, 202, 192, 0.5);
   border-radius: 15px;
-  padding: 25px 15px;
+  padding: 40px 15px;
   box-shadow: 5px 5px 20px white(255, 0, 149);
-  
+  height: 89vh;
 }
 
 /* Sidebar styles------------------------------------- */
@@ -58,6 +58,8 @@ a:hover {
   border-radius: 15px;
   padding: 15px 5px;
   text-align: center;
+  
+  margin-bottom: 5px;
 }
 
 .sidebar-avatar {
@@ -181,12 +183,14 @@ font-size: 30px;
 
 .about{
   padding: 20 px;
+  height: 70vh;
   
 }
 
 .about-intro{
   font-size: 1.1rem;
-  padding: 20px;
+  padding: 10px;
+  text-align: justify;
 }
 
 .about-container{
@@ -231,6 +235,7 @@ font-size: 30px;
 
 .resume {
   padding-top: 20px;
+  height: 70vh;
 }
 
 .resume-card-heading,
@@ -252,6 +257,7 @@ font-size: 30px;
 
 .resume-card-name {
   font-size: 16px;
+  /* text-align: justify; */
 }
 
 .resume-card-details {
@@ -335,9 +341,14 @@ font-size: 30px;
   display: flex;
   margin-bottom: 5px;
   justify-content: space-around;
-  display: flex;
-  background-color: #FEFBF4;
+  display: flex;  
   color: #737196;
+}
+
+.projects-link{
+  background-color: #FEFBF4;
+  border-radius: 40%;
+  width: 100px;
 }
 
 .projects-navbar>div {
@@ -356,6 +367,22 @@ font-size: 30px;
       color: black;
       
   }
+
+  /* .app-container {
+    padding-top:50px;
+  }
+   */
+  .app-main-content {
+    height: 165vh;
+  }
+
+
+  .projects-navbar {
+    color: black;
+    font-size: small;
+    background-color: transparent;
+  }
+  
   
 
   .navbar-active {
@@ -365,12 +392,15 @@ font-size: 30px;
   .navbar-item {
       font-size: 1rem;
   }
+}
 
-  @media screen and (max-width:991px) {
+  @media screen and (max-width:1024px) {
     body, p, h1, h2, h3, h4, h5, h6, span, #inline {
       color: black;
       
   }
+  .app-main-content {
+    height: 135vh;
   }
 
 

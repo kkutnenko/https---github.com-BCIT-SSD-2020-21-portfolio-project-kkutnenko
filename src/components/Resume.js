@@ -13,6 +13,7 @@ import vs from '../assets/icons/black/vs.png'
 import msssms from '../assets/icons/black/msssms.png'
 import github from '../assets/icons/github.svg'
 import wd from '../assets/icons/whiteDot.png'
+import {motion} from 'framer-motion'
 
 const languages = [
     {
@@ -110,42 +111,70 @@ function createTool(tool){
 
 export default class Resume extends Component {
     render() {
+        const resumeVar = 
+            {
+                hidden: 
+                {
+                   opacity:0
+                },
+                visible: 
+                {
+                    opacity: 1,
+                    transition: 
+                    {
+                        delay:0.2, duration:0.6, type: 'spring'
+                    }
+                }
+            }
         return (
-            <div className="container resume">
-                <div className="row">
+            <motion.div className="container resume"
+            variants={resumeVar}
+            initial='hidden'
+            animate='visible'
+            >
+                <div className="row pb-3 border-bottom border-white">
                     <div className="col-lg-6 resume-card">
                         <h4 className="resume-card-heading">
                             Education
                         </h4>
                     
-                        <div className="resume-card-body">
+                        <div className="resume-card-body ">
                             <h6 className="resume-card-title">
-                                Web programming
+                                British Columbia Institute of Technology
                             </h6>
-                            <p className="resume-card-name">
-                                BCIT
-                            </p>
-                            <p className="resume-card-details">
-                                Lorem
-                            </p>
+                            <div className="resume-card-name">
+                                <div >
+                                    <span>Software Systems Development (Web Programming)   </span> 
+                                    <div className="pb-1 font-weight-light"><i>Sep 2020 - May 2021</i></div> 
+                                </div> 
+                                <div>                                                    
+                                    <span>Finacial Management (Finance Option)   </span>
+                                    <div className="font-weight-light"><i>Sep 2018 - Mar 2010</i></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div className="col-lg-6 resume-card">
                             <h4 className="resume-card-heading">
                                 Experience
                             </h4>
-                        
-
                         <div className="resume-card-body">
                             <h6 className="resume-card-title">
-                            LoremExp
+                                British Columbia Institute of Technology
                             </h6>
-                            <p className="resume-card-name">
-                                LoremExp
-                            </p>
-                            <p className="resume-card-details">
-                                LoremExp
-                            </p>
+                            <div className="resume-card-name">
+                                <div >
+                                    <span>Web Developer in Training</span> 
+                                    <div className="pb-1 font-weight-light"><i>Sep 2020 - May 2021</i></div> 
+                                </div> 
+                                <h6 className="resume-card-title">
+                                    Broadway Tax Clinic
+                                </h6>
+                                <div>                                                    
+                                    <span>Tax Accountant</span>
+                                    <div className="font-weight-light"><i>Feb 2016 - May 2020</i></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -176,7 +205,7 @@ export default class Resume extends Component {
                     </div>
                 </div>
 
-            </div>
+            </motion.div>
         )
     }
 }

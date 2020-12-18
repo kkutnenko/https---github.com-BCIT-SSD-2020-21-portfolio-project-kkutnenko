@@ -5,13 +5,27 @@ import designPrinciples from '../../assets/projects/design.png'
 import electrosparks from '../../assets/projects/electrosparks2.png'
 import movieApp from '../../assets/projects/movie.png'
 import eshop from '../../assets/projects/eshop.png'
+import betterbuys from '../../assets/projects/Betterbuys.PNG'
 
 const projectData = [
+    
     {
-        name: 'MenuApp',
-        image: menuApp,
-        github: 'https://github.com/BCIT-SSD-2020-21/lab-7-intermediate-javascript-group_l.git',
-        category: ['JavaScript']
+        name: 'BetterBuys',
+        image: betterbuys,
+        github: 'https://betterbuysco.azurewebsites.net/',
+        category: ['Asp.Net']
+    },
+    {
+        name: 'Eshop',
+        image: eshop,
+        github: 'https://github.com/BCIT-SSD-2020-21/ssdeshoponweb-kkutnenko',
+        category: ['Asp.Net']
+    },
+    {
+        name: 'MovieApp',
+        image: movieApp,
+        github: 'https://github.com/BCIT-SSD-2020-21/lab-2---react-kkutnenko',
+        category: ['ReactJS']
     },
     {
         name: 'Electrosparks',
@@ -30,19 +44,8 @@ const projectData = [
         image: electrosparks,
         github: 'https://github.com/BCIT-SSD-2020-21/lab-1---angular-kkutnenko',
         category: ['Angular']
-    },
-    {
-        name: 'MovieApp',
-        image: movieApp,
-        github: 'https://github.com/BCIT-SSD-2020-21/lab-2---react-kkutnenko',
-        category: ['ReactJS']
-    },
-    {
-        name: 'Eshop',
-        image: eshop,
-        github: 'https://github.com/BCIT-SSD-2020-21/ssdeshoponweb-kkutnenko',
-        category: ['Asp.Net']
-    },
+    }
+    
 ]
 
 export default projectData;

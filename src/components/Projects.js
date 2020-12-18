@@ -34,12 +34,11 @@ const Projects = () => {
                     animate='visible'
         >
             <div className="projects-navbar">
-                <div onClick={()=>setProjects(projectData)}>All</div>
-                <div onClick={()=>categoryFilter('ReactJS')}>ReactJS</div>
-                <div onClick={()=>categoryFilter('Angular')}>Angular</div>
-                <div onClick={()=>categoryFilter('HTML')}>HTML</div>
-                <div onClick={()=>categoryFilter('JavaScript')}>JavaScript</div>
-                <div onClick={()=>categoryFilter('Asp.Net')}>Asp.Net</div>
+                <div className="projects-link" onClick={()=>setProjects(projectData)}>All</div>
+                <div className="projects-link"onClick={()=>categoryFilter('ReactJS')}>ReactJS</div>
+                <div className="projects-link" onClick={()=>categoryFilter('Angular')}>Angular</div>
+                <div className="projects-link" onClick={()=>categoryFilter('HTML')}>HTML</div>                
+                <div className="projects-link" onClick={()=>categoryFilter('Asp.Net')}>Asp.Net</div>
             </div>    
             
             <div className="row">
