@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import projectData from './data/ProjectData'
 import ProjectCard from './ProjectCard'
+import {motion} from 'framer-motion'
 
 const Projects = () => {
     const [projects, setProjects] = useState(projectData)
@@ -9,8 +10,29 @@ const Projects = () => {
         const newArray = projectData.filter(project => project.category.includes(name))
         setProjects(newArray)
     }
+
+    const projectVar = 
+            {
+                hidden: 
+                {
+                    opacity:0
+                },
+                visible: 
+                {
+                    opacity: 1,
+                    transition: 
+                    {
+                        delay:0.2, duration:0.6, type: 'spring'
+                    }
+                }
+            }
+
     return (
-        <div className="container projects">
+        <motion.div className="container projects"
+            variants={projectVar}
+                    initial='hidden'
+                    animate='visible'
+        >
             <div className="projects-navbar">
                 <div onClick={()=>setProjects(projectData)}>All</div>
                 <div onClick={()=>categoryFilter('ReactJS')}>ReactJS</div>
@@ -26,7 +48,7 @@ const Projects = () => {
                             <ProjectCard key={project.name} project={project} />)
                     }
             </div>            
-        </div>
+        </motion.div>
     );
 };
 

@@ -45,7 +45,6 @@ a:hover {
   background: rgba(209, 202, 192, 0.5);
   border-radius: 15px;
   padding: 25px 15px;
-  margin: 15px 0;
   box-shadow: 5px 5px 20px white(255, 0, 149);
   
 }
@@ -335,6 +334,10 @@ font-size: 30px;
 .projects-navbar {
   display: flex;
   margin-bottom: 5px;
+  justify-content: space-around;
+  display: flex;
+  background-color: #FEFBF4;
+  color: #737196;
 }
 
 .projects-navbar>div {
@@ -345,7 +348,7 @@ font-size: 30px;
 
 .projects-navbar-active {
   color: #00F260;
-  align-items: ;
+  
 }
 
 @media screen and (max-width: 600px) {

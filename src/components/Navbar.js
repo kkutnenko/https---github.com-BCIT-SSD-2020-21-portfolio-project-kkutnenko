@@ -1,6 +1,8 @@
 import React, { Component, useEffect } from 'react'
 import {Link} from 'react-router-dom'
 import { browserHistory } from 'react-router';
+import {motion} from 'framer-motion'
+
 
 
 export default class Navbar extends Component {
@@ -13,10 +15,6 @@ export default class Navbar extends Component {
         
 
     }
-
-// componentDidMount(clickedLink){
-//     this.setState({activeLink:'About'})
-// }
 
 componentDidUpdate(prevProps) {
     // Typical usage (don't forget to compare props):
@@ -32,40 +30,40 @@ componentDidUpdate(prevProps) {
     }
   }
  
-    // componentDidUpdate (_,prevProps){
-    //     if(this.state === prevProps) {
-    //         return;
-    //     }
-    //     this.setState({activeLink: this.checkURL()})
-        
-
-    //  }
-
-    // checkURL () {
-        // let currentURL = window.location.href;
-
-        // if (currentURL.endsWith('/resume')) {
-        //     return 'Resume'}
-        // else if (currentURL.endsWith('/projects')) {
-        //     return 'Projects' }
-        // else if (currentURL.endsWith('/about')) {
-        //         return 'About' }
-    // }
+    
 
     handleClick (clickedLink)  {
         this.setState({activeLink: clickedLink})
         
     }
 
-    // useEffect(() => {
-    //     let currentURL = 
-    // }, [activeLink])
-    
+        
 
     render() {
-        const {activeLink} = this.state;
+            const {activeLink} = this.state;
+            const navbarVar = 
+            {
+                hidden: 
+                {
+                    y:'-30vh',
+                    opacity:0
+                },
+                visible: 
+                {
+                    y:0,
+                    opacity: 1,
+                    transition: 
+                    {
+                        delay:0.2, duration:0.7, type: 'spring'
+                    }
+                }
+            }
         return (
-            <div className="navbar">
+            <motion.div className="navbar"
+                variants={navbarVar}
+                initial='hidden'
+                animate='visible'
+            >
                 <div className="navbar-active">
                     <p>{activeLink}</p>
                 </div>
@@ -83,7 +81,7 @@ componentDidUpdate(prevProps) {
                     </Link>
                 </div>
                 
-            </div>
+            </motion.div>
         )
     }
 }

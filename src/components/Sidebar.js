@@ -6,6 +6,7 @@ import tie from '../assets/icons/pin1.svg'
 import pin from '../assets/icons/map.png'
 import mightycoder from '../assets/icons/programmer.svg'
 import resume from '../assets/resume.pdf'
+import {motion} from 'framer-motion'
 
 function handleEmailMe (){
     window.open("mailto:kkutnenko@mybcit.ca")
@@ -15,9 +16,27 @@ function handleEmailMe (){
 export default class Sidebar extends Component {
    
     render() {
-        
+            const sidebarVar ={
+                hidden: {
+                    x:"-10vw",
+                    opacity:0
+                },
+                visible:{
+                    x:0,
+                    opacity: 1,
+                    transition: 
+                    {
+                        dealy:0.2, duration:0.7, type: 'spring'
+                    }
+                }
+            }
         return (
-            <div className="sidebar">
+            
+            <motion.div className="sidebar"
+                variants={sidebarVar}
+                initial="hidden"
+                animate="visible"
+            >
                 <img src={mightycoder} alt="avatar" className="sidebar-avatar"/>
                 <div className="sidebar-name">
                     <p><span>Kirill Kutnenko</span> </p>
@@ -61,7 +80,8 @@ export default class Sidebar extends Component {
                 <div className="sidebar-item sidebar-email" onClick={handleEmailMe}>
                     <p>Send me an e-mail</p>
                 </div>
-            </div>
+            </motion.div>
+            
         )
     }
 }

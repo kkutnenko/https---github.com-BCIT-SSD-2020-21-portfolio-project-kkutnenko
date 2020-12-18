@@ -11,12 +11,12 @@ const skills = [
     {
         icon: frontend,
         title:"Frontend",
-        about:"Modern websites developed with JavaScript, jQuery, React and Angular"
+        about:"Modern websites and single page web apps developed with latest technology"
     },
     {
         icon: backend,
         title:"Backend",
-        about:"Complex solutions buit with .Net MVC and Web API"
+        about:"Complex solutions buit with .Net and Node.JS"
     },
     {
         icon: database,
@@ -26,7 +26,7 @@ const skills = [
     {
         icon: mobile,
         title:"Mobile",
-        about:"Mobile app development using Kotlin/React Native"
+        about:"Mobile app development for iOS and Android"
     },
     {
         icon: serverless,
@@ -36,7 +36,7 @@ const skills = [
     {
         icon: testing,
         title:"Quality Assurance",
-        about:"Automated testing using Selenium WebDriver, MStest and Nunit"
+        about:"Automated testing using scripts and unit test Frameworks"
     }
 
 ]
